@@ -25,6 +25,35 @@
 
         <button>Quero ajudar</button>
     </header>
+    
+    <!--input-->
+    <!--Lembrete:
+        section.form -> monta uma tag com um class de 'formulario'-->
+    <section class="form">
+        <h2>Entre na lista de doadores</h2>
+        <form action="">
+            <input 
+                type="text"
+                name="name"
+                placeholder="Nome Completo"
+            >
+            <input
+                type="text"
+                name="email"
+                placeholder="Email"
+            >
+            <input
+                type="text"
+                name="blood"
+                placeholder="Tipo sanguíneo"
+            >
+            <button>Quero ajudar</button>
+        </form>
+    </section>
+
+    <!--output-->
+
+
     <main>
         <!--Conteudo central da aplicação-->
         <h2>Últimos doadore</h2>
@@ -32,15 +61,38 @@
         <section class="donors">
             <!--Simplesmente diz que é uma sessão-->
             <!--Container que não tem um significado, mas significa que se está agrupando conteudos dentro 
-            desse elemento -->
+    desse elemento -->
+            <!--Semantica escrever de uma maneira que faça sentido-->
             <div class="donor">
+                <!--Div é um conteudo generico, um containner-->
                 <div class="blood">AB+</div>
                 <p>Diego Fernandes</p>
+            </div>
+            <div class="donor">
+                <!--Div é um conteudo generico, um containner-->
+                <div class="blood">O+</div>
+                <p>Mayk Brito</p>
+            </div>
+            <div class="donor">
+                <!--Div é um conteudo generico, um containner-->
+                <div class="blood">O-</div>
+                <p>Letícia Mariana Boldo</p>
+            </div>
+            <div class="donor">
+                <!--Div é um conteudo generico, um containner-->
+                <div class="blood">B+</div>
+                <p>Cleiton Soza</p>
+            </div>
+            <div class="donor">
+                <!--Div é um conteudo generico, um containner-->
+                <div class="blood">A+</div>
+                <p>Robso Marques</p>
             </div>
         </section>
     </main>
     <footer>
         <!--rodapé da aplicação-->
+        Com ❤️ Rocketseat
     </footer>
 </body>
 
