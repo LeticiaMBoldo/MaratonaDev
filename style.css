@@ -1,0 +1,64 @@
+/*
+Cascading stylesheet
+fOLHA DE ESTILO EM CASCATA
+*/
+
+html, body{
+    margin: 0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    /*diferente do grid, esse elemento só pode tranalhar de uma forma ou de outra
+    */
+
+    height: 100vh;
+}
+
+footer{
+    margin-top: auto;
+}
+
+/*alinhamentos , espaçamentos, larguras e alturas*/
+
+/*quando as informações forem iguais, pode-se faze rigual ao exemplo abaixo, as informações não ficam repetidas*/
+header, main, footer{
+    text-align: center;
+}
+
+header, h1, main, h2{
+    margin-bottom: 70px;
+}
+
+.donors{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /*a propriedade display é a maneira como o css vai mostrar elementos na pagina, exemplo de display, inline, block, pense nele como o conteudo será apresentado pelo navegador, grid vai aparecer em colunas, linhas.
+        grid-template-columns: quantidade de colunas presentes no grid;
+        grid-template-rows: a quantidade de linhas presentes no grid; 
+        1fr -> torna a coluna flexicivel, assim nenhum elemento toma o lugar do outro*/
+
+}
+
+/*quando se colocar section.form se coloca mais força em cima do form, se um elemento for mais forte que o outro o que tem mais força ganha, portanto se colocar um form branco e section.form vermelho, ele vai pegar a cor do vermelho por causa que a section.form é mais "forte" que so o .form*/
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+header, .form, main{
+    /*espaçamento com margem*/
+    /*a ordem dos margens é top, right, bottom and left*/
+    margin: 0 auto 70px auto;
+
+    /*limites dos elementos na pagina*/
+    width: 90%;
+    max-width: 500px;
+    
+}
+
+
+
+
